@@ -69,14 +69,14 @@ const FolderPage = () => {
 
       // Delete the folder itself
       await deleteDoc(doc(db, 'folders', folder.id));
-      navigate('/');
+      navigate('/Home');
     } catch (e) {
       console.error("Error deleting folder: ", e);
     }
   };
 
   return (
-    <Box p={2} sx={{ minHeight: '100vh', background: '#f3e5f5' }}>
+    <Box p={2} sx={{ minHeight: '100vh', background: '#f3e5f5',width:"100vw" }}>
       <Box display="flex" alignItems="center" mb={2}>
         <IconButton onClick={() => navigate(-1)}><ArrowBack /></IconButton>
         <Typography variant="h6" fontWeight="bold" color={folder.color}>

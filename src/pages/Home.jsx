@@ -51,7 +51,7 @@ const Home = () => {
   }
 
   return (
-    <Box p={2} sx={{ minHeight: '100vh', background: '#e0f7fa' }}>
+    <Box p={2} sx={{ minHeight: '100vh', background: '#e0f7fa',width:"100vw" }}>
       <Typography variant="h5" mb={2} fontWeight="bold"  sx={{color:"rgb(232, 0, 0)",display:"flex",justifyContent:"space-between"}}>
        <Typography> 📁 Tasks Folders</Typography>
 
