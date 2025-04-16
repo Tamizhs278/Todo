@@ -17,7 +17,7 @@ const LoginPage = () => {
   const handleLogin = () => {
     if (email === defaultEmail && password === defaultPassword) {
       // Redirect or show success message
-      navigate("/Home")
+      navigate("/home")
       localStorage.setItem("user", JSON.stringify("zghshsuhjsbjdgjhksjkshkj"));
 
     } else {
